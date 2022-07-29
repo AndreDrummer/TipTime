@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-    xmlns:android="http://schemas.adnroid.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    >
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -18,12 +16,11 @@
         android:id="@+id/icon_cost_of_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_store"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/cost_of_services"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/cost_of_services"
-        app:layout_constraintBottom_toBottomOf="@id/cost_of_services"
-        />
+        app:srcCompat="@drawable/ic_store" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cost_of_services"
